@@ -47,9 +47,10 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Igrice</title>
 </head>
@@ -57,7 +58,7 @@ session_start();
     
     <nav class="navbar navbar-custom" id="header">
         <a class="navbar-brand" href="home.php" style="vertical-align:center;">
-            <img src="img/logo.jpg" width="auto" height="50" class="d-inline-block align-top" alt=""><strong>Igrice</strong>
+            <img src="img/logo.jpg" width="auto" height="50" class="d-inline-block align-center" alt=""><strong>Igrice</strong>
         </a> 
         <div>
             <a class="nav-link" href="home.php">Pocetna</a>
@@ -76,10 +77,6 @@ session_start();
                     <option value="DESC">Cena opadajuće</option>
             </select>
 
-            <!-- <div class="input-group" style="float:right;padding-left:65%;padding-right:15%;"> 
-                <input type="search" id="form1" class="form-control"  style="float:right" onkeyup="pretraga()" placeholder="Search by name..."/>
-                <button type="button" class="btn btn-custom" style="background-color:#fbc2eb; color:black" ;><i class="fas fa-search"></i> </button>
-            </div> -->
         </div>
         <br><br>
 
@@ -91,7 +88,7 @@ session_start();
 
     <br><br><br>
 
-
+    <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
 

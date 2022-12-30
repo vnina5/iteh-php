@@ -39,20 +39,20 @@ require "model/Igrica.php";
         while ($row = $sve->fetch_array()):
             
     ?>
-        <div class="card" style="width:300px">
-            <div class="card-header" style="padding:0">
-                    <img src="<?php echo $row['slika']?>" style="height:300px;width: auto;" >   
+        <div class="card" style="width:300px;margin:25px;">
+            <div class="card-header" style="padding:0;height:300px;">
+                    <img src="<?php echo $row['slika']?>" style="max-height:300px;background-size:cover;" >   
             </div>
             <div class="card-body">
                 <div class="tag tag-teal category"> <?php echo $row['nazivKat']?> </div>  
                 <br>
                 <h4 name = "naslovKartice">  <?php echo $row['naziv']?> </h4>
                 <p>  <?php echo $row['kompanija']?>  </p>  
-                <p style="font-size:20px;"> <strong>Cena: </strong> <?php echo $row['cena']."$"?> </p>
+                <p style="font-size:20px;color:#141029;"> <strong>Cena: </strong> <?php echo $row['cena']."$"?> </p>
                 
                 <form  method="post">
                     <!-- <button type="button" class="btn btn-custom" style="background-color:#47bcd4;"><i class="fas fa-pencil-alt"></i></button>  -->
-                    <button type="button" class="btn btn-custom button" onclick="obrisiKarticu(<?php echo $row['id'];?>)">Obriši</button>  
+                    <button type="button" class="btn btn-custom obrisi" onclick="obrisiKarticu(<?php echo $row['id'];?>)">Obriši</button>  
                 </form>
             </div> 
         </div>
@@ -61,6 +61,7 @@ require "model/Igrica.php";
     </div>
 
 
+    <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
 
